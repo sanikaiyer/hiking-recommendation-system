@@ -6,7 +6,6 @@ A system that recommends hiking trails based on user preferences, such as diffic
 Features
 Hiking Trail Recommendations: Suggests trails based on user preferences like difficulty, location, time, and distance.
 Weather Integration: Uses real-time weather data to suggest the best time to hike.
-Sunset Time Integration: Optimizes trail recommendations based on sunset timings for a scenic hiking experience.
 Trail Filters: Filters trails by difficulty, length, elevation gain, and ratings.
 Model-Based Recommendation: Uses a machine learning model to improve trail recommendations based on historical data.
 Web Interface: Provides an easy-to-use web interface with HTML templates for users to interact with.
