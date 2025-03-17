@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ trail.name }} - Trail Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h1 {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .detail {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .detail strong {
+            color: #3498db;
+        }
+        .weather {
+            background-color: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .weather p {
+            font-size: 16px;
+            margin: 0;
+        }
+        .weather span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>{{ trail.name }}</h1>
+
+    <div class="container">
+        <p class="detail"><strong>Location:</strong> {{ trail.location }}</p>
+        <p class="detail"><strong>Difficulty:</strong> {{ trail.difficulty }}</p>
+        <p class="detail"><strong>Distance:</strong> {{ trail.distance }} miles</p>
+        <p class="detail"><strong>Elevation Gain:</strong> {{ trail.elevation }} feet</p>
+        <p class="detail"><strong>Rating:</strong> {{ trail.rating }}</p>
+
+        <!-- Display temperature information -->
+        <div class="weather">
+            <p>
+                {% if temperature %}
+                    <span>Weather (Temperature):</span> {{ temperature }}
+                {% else %}
+                    Weather data is unavailable.
+                {% endif %}
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
