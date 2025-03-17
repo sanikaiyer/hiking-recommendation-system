@@ -3,7 +3,7 @@ Hikeopedia: A Hiking Trails Recommendation System
 
 A system that recommends hiking trails based on user preferences, such as difficulty, distance, time, and location. This system integrates weather and sunset data to suggest the optimal time for hiking, ensuring users can enjoy scenic views. It also provides filtering and ranking functionalities based on various factors, helping users find the best hiking trails.
 
-Features
+Features \n
 Hiking Trail Recommendations: Suggests trails based on user preferences like difficulty, location, time, and distance.
 Weather Integration: Uses real-time weather data to suggest the best time to hike.
 Trail Filters: Filters trails by difficulty, length, elevation gain, and ratings.
